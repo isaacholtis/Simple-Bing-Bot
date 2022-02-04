@@ -1,45 +1,17 @@
 import webbrowser
-import random
+from random import randint
+import pyautogui
+import time
 
-searchNum = int(input("Please input the number of tabs you want to open.\nPlease note that the more tabs you open the more ram you will use, and we are not responsible for your computer crashing.\n-->"))
-timesNum = int(input("Please input the number of times you would like to run this.\nie your inputed amount of tabs, times whatever number you input now. The max number of times is 4.\n-->"))
+searchNum = int(input("Please input the number of tabs you want to open.\nEach tab will open once, and then close, so feel free to do as many as you want!\n-->"))
+timeNum = int(input("Please input how long you'd like to wait between searches.\nToo short of a time may cause the page to fail to load.\n-->"))
 
-num = 0
-webLink = []
+# We want to have searchNum = the number of tabs open in the browser, and we want to create a random number to update those tabs every 15 seconds, instead of opening a new tab and using too much ram.
 for i in range(searchNum):
-    webLink.append(f"https://www.bing.com/search?q={(i + 1)}")
-for i in range(searchNum):
-    webbrowser.open (webLink[i])
-
-if timesNum == 0:
-    for i in range(searchNum):
-        webLink.append(f"https://www.bing.com/search?q={(i)}")
-    for i in range(searchNum):
-        webbrowser.open (webLink[i])
-
-elif timesNum == 1:
-    for i in range(searchNum + 1):
-        webLink.append(f"https://www.bing.com/search?q={(i + 2)}")
-    for i in range(searchNum + 1):
-        webbrowser.open (webLink[i])
-
-elif timesNum == 2:
-    for i in range(searchNum + 2):
-        webLink.append(f"https://www.bing.com/search?q={(i + 3)}")
-    for i in range(searchNum + 2):
-        webbrowser.open (webLink[i])
-
-elif timesNum == 3:
-    for i in range(searchNum + 3):
-        webLink.append(f"https://www.bing.com/search?q={(i + 4)}")
-    for i in range(searchNum + 3):
-        webbrowser.open (webLink[i])
-
-elif timesNum == 4:
-    for i in range(searchNum + 4):
-        webLink.append(f"https://www.bing.com/search?q={(i + 5)}")
-    for i in range(searchNum + 4):
-        webbrowser.open (webLink[i])
-
-else:
-    print("You either didn't input the correct number, or a number at all.")
+    webbrowser.open(f"https://www.bing.com/search?q={randint(1,200)}")
+    time.sleep(timeNum)
+    pyautogui.hotkey('ctrl', 'w')
+'''webbrowser.open("google.com")
+time.sleep(3)
+pyautogui.hotkey('ctrl', 'w')
+print("tab closed")'''
