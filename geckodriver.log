@@ -710,3 +710,44 @@ JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
 JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
 1644099110663	Marionette	INFO	Stopped listening on port 62136
+1644099302142	geckodriver	INFO	Listening on 127.0.0.1:58778
+1644099305233	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "58779" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofiletrFfqu"
+1644099306005	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofiletrFfqu\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:58779/devtools/browser/04b50a8c-a786-4aac-90d0-d8a570406a6a
+1644099311630	Marionette	INFO	Listening on port 58784
+1644099311762	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/mconsole.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous mesconsole.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644099377800	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+noring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1644099390866	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
