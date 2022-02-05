@@ -25,7 +25,7 @@ with open('encKey.pkl', 'rb') as encOpenKey:
 # Get a variable to tell the system how many tabs to open.
 searchNum = int(input("Please input the number of searches you want completed.\nEach search will open a tab once, and then close that tab, so feel free to do as many as you want!\n-->"))
 # Get a variable to tell the system how long to wait before closing a tab.
-timeNum = int(input("Please input how long you'd like to wait between searches.\nToo short of a time may cause the page to fail to load.\n-->"))
+timeNum = int(input("Please input how long you'd like to wait between searches.\nToo short of a time may cause the page to fail to load.\nWe reccomend about 5 seconds per search as that produces good results and registers searches.\n-->"))
 tabNum = int(input("Please input how many tabs you'd like open at once.\n-->"))
 userName = input("Please input your first and last name so we can store you encrypted username and password.\nIf you've already entered your email and password once, then put in your name, and we'll load your profile\n-->")
 if userName + " Email" in encFiles:
