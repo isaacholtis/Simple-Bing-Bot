@@ -15,7 +15,6 @@ from os import startfile
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
 whatBrowse = webdriver.Firefox()
-whatBrowse2 = webdriver.Firefox()
 print("Browser started")
 
 # Email web content on the Microsoft account page
@@ -26,6 +25,7 @@ PASSWORDFIELD = (By.ID, "i0118")
 NEXTBUTTON = (By.ID, "idSIButton9")
 # Sign in button on the bing search page
 SIGNINBUTTON = (By.ID, "id_a")
+print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 
 for i in range(5):
     try:
@@ -52,6 +52,8 @@ for i in range(5):
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
     startfile("ErrorHandler.txt")
+    print("System will exit in 3 seconds")
+    time.sleep(2.9)
     sys.exit()
 # Get a variable to tell the system how many searches each thread completes...
 # This will be double the searches intended by the user, so we need to fix that
@@ -66,6 +68,8 @@ for i in range(5):
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
     startfile("ErrorHandler.txt")
+    print("System will exit in 3 seconds")
+    time.sleep(2.9)
     sys.exit()
 # Get a variable to tell the system how long to wait before closing a tab.
 for i in range(5):
@@ -79,22 +83,8 @@ for i in range(5):
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
     startfile("ErrorHandler.txt")
-    sys.exit()
-# This changes the number of threads the system creates...
-# and exponentially increases the number of total searches completed...
-# I might just make it 2 no matter what, then work out some other stuff...
-# to get the user the number of searches they requested
-for i in range(5):
-    try:
-        tabNum = int(input("Please input how many tabs you'd like open at once.\n-->"))
-    except ValueError:
-        print("You didn't input a number!\n\nTry agian!\n")
-        continue
-    else:
-        break
-else:
-    print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    print("System will exit in 3 seconds")
+    time.sleep(2.9)
     sys.exit()
 # Gets the name of the user, so we can check if they have entered their credentials before
 for i in range(5):
@@ -108,6 +98,8 @@ for i in range(5):
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
     startfile("ErrorHandler.txt")
+    print("System will exit in 3 seconds")
+    time.sleep(2.9)
     sys.exit()
 
 # If the user has entered credentials, the system won't ask again
@@ -145,9 +137,12 @@ try:
         encKeyPickle = {userName + " keyEmail": keyEmail, userName + " keyPwd": keyPwd}
         with open('encKey.pkl', 'wb') as encKey:
             pickle.dump(encKeyPickle, encKey)
+        print("Profile saved succesesfully!\nJust type your name next time you use the bot, and we'll remember you password.\nAnd of course, it also encypted.")
 except:
     print("A fatal error occured!! We need to exit. Try rerunning the program. :(")
     startfile("ErrorHandler.txt")
+    print("System will exit in 3 seconds")
+    time.sleep(2.9)
     sys.exit()
 
 # Defines the funtion that the threads use later on to search...
@@ -182,41 +177,15 @@ for i in range(5):
 else:
     print("There were some issues getting you logged into your account. We tried several times, but we couldn't get it to work.\nThe program will have to close. :(")
     startfile("ErrorHandler.txt")
-    sys.exit()
-for i in range(5):
-    try:
-        # Login for the second webdriver instance
-        whatBrowse2.get('https://login.live.com')
-        # Wait for email field and enter email
-        WebDriverWait(whatBrowse2, 10).until(EC.element_to_be_clickable(EMAILFIELD)).send_keys(email6)
-        # Click Next
-        WebDriverWait(whatBrowse2, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
-        # Wait for password field and enter password
-        WebDriverWait(whatBrowse2, 10).until(EC.element_to_be_clickable(PASSWORDFIELD)).send_keys(pwd)
-        # Click Login
-        WebDriverWait(whatBrowse2, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
-        # Click Yes
-        WebDriverWait(whatBrowse2, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
-        break
-    except:
-        print("Weird, the login for the second windows didn't work. We'll try again.")
-        continue
-else:
-    print("There were some issues getting you logged into your account in the second window. We tried several times, but we couldn't get it to work.\nThe program will have to close. :(")
-    startfile("ErrorHandler.txt")
+    print("System will exit in 3 seconds")
+    time.sleep(2.9)
     sys.exit()
 time.sleep(4)
 # For loops to create two instances running at once
-for i in range(tabNum):
-    i = threading.Thread(target=searchNumR, args=(searchNum,timeNum,whatBrowse))
-    i.start()
-for i in range(tabNum):
-    i = threading.Thread(target=searchNumR, args=(searchNum,timeNum,whatBrowse2))
-    i.start()
+searchNumR(searchNum, timeNum, whatBrowse)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
 id = whatBrowse.find_element_by_id("id_a")
 id.click()
-id = whatBrowse2.find_element_by_id("id_a")
-id.click()
+print("Searches completed succsesfully! Thanks again for using our bot!")
