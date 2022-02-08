@@ -10,6 +10,7 @@ from cryptography.fernet import Fernet
 import pickle
 import sys
 from os import startfile
+import numpy
 
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
@@ -33,15 +34,12 @@ for i in range(5):
             encFiles = pickle.load(encOpenEmail)
         with open('encKey.pkl', 'rb') as encOpenKey:
             encFilesKey = pickle.load(encOpenKey)
+        wordList = open('wordList.txt', 'rb')
+        list4 = wordList.read()
+        print(list4)
+        time.sleep(100)
         break
     except FileNotFoundError:
-        print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
-        tryAgian = input("Would you like us to try again? Type yes or no.\n-->")
-        if str.lower(tryAgian) == "yes":
-            continue
-        else:
-            break
-    except pickle.PickleError:
         print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
         tryAgian = input("Would you like us to try again? Type yes or no.\n-->")
         if str.lower(tryAgian) == "yes":
@@ -74,6 +72,20 @@ else:
 for i in range(5):
     try:
         timeNum = int(input("Please input how long you'd like to wait between searches.\nToo short of a time may cause the page to fail to load.\nWe reccomend about 5 seconds per search as that produces good results and registers searches.\n-->"))
+    except ValueError:
+        print("You didn't input a number!\n\nTry agian!\n")
+        continue
+    else:
+        break
+else:
+    print("You did something wrong too many times. Try rerunning the program. :(")
+    startfile("ErrorHandler.txt")
+    print("System will exit in 3 seconds")
+    time.sleep(2.9)
+    sys.exit()
+for i in range(5):
+    try:
+        tabNum = int(input("Please input how long you'd like to wait between searches.\nToo short of a time may cause the page to fail to load.\nWe reccomend about 5 seconds per search as that produces good results and registers searches.\n-->"))
     except ValueError:
         print("You didn't input a number!\n\nTry agian!\n")
         continue
@@ -225,7 +237,7 @@ print("Okay! Starting login, and searches!")
 beginlist = ['why', 'how', 'what', 'where', 'when']
 list2 = ['did', 'could',]
 list3 = ['the', 'a', 'you', 'they', 'we', 'people']
-list4 = ['apple', 'scam', 'minecraft', 'microsoft', 'email', 'talk', 'random', 'box', 'company', 'fireplace']
+list4 = []
 def searchNumR(n1, n2):
     for i in range(n1):
         searchterm = f'https://www.bing.com/search?q={random.choice(beginlist)}+{random.choice(list2)}+{random.choice(list3)}+{random.choice(list4)}'
