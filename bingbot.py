@@ -1,7 +1,6 @@
 
-from random import randint
+import random
 import time
-import threading
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
@@ -89,7 +88,7 @@ else:
 # Gets the name of the user, so we can check if they have entered their credentials before
 for i in range(5):
     try:
-        userName = input("Please input your first and last name so we can store you encrypted username and password.\nIf you've already entered your email and password once, then put in your name, and we'll load your profile\n-->")
+        userName = input("We need your Microsoft account details so we can sign you in to save your search points.\nPlease input your first and last name so we can store you encrypted username and password.\nOr, if you don't want to save your details, there will be an option to opt out, and you can just enter them, but they won't be saved.\nIf you've already entered your email and password once, then put in your name, and we'll load your profile if it exists in our system.\n-->")
     except ValueError:
         print("You didn't type letters!\n\nTry again!\n")
         continue
@@ -114,47 +113,134 @@ try:
         pwd = pwdKey.decrypt(pwdCrypt).decode()
     # If the user has not entered credentials before, the system will ask the user to enter them
     else:
-        email = input("Please enter you Microsoft account email.\n-->")
-        pwd = input("Please input your Microsoft account password.\n-->")
-        # Creates encryption keys, I think this could be simplified
-        key = Fernet.generate_key()
-        key2 = Fernet.generate_key()
-        keyEmail = Fernet(key)
-        keyPwd = Fernet(key2)
-        # Encrypts the email and password
-        encEmail = keyEmail.encrypt(email.encode())
-        encPwd = keyPwd.encrypt(pwd.encode())
-        # Dictionary that will be stored in a pickle file...
-        # with the encrypted email and password in it with appropriate dictionary...
-        #  keys to call back the email and password later
-        encEPPickle = {userName + " Email": encEmail, userName + " Password": encPwd}
-        # Store the dictionary in a pickle file called encEPwd.pkl
-        with open('encEPwd.pkl', 'wb') as encFile:
-            pickle.dump(encEPPickle, encFile)
-        # Dictionary that will be stored in a pickle file...
-        #  with the decryption keys for the email and password in it with appropriate dictionary...
-        #  keys to call back the decryption keys later
-        encKeyPickle = {userName + " keyEmail": keyEmail, userName + " keyPwd": keyPwd}
-        with open('encKey.pkl', 'wb') as encKey:
-            pickle.dump(encKeyPickle, encKey)
-        print("Profile saved succesesfully!\nJust type your name next time you use the bot, and we'll remember you password.\nAnd of course, it also encypted.")
+        enrollDetails = str.lower(input("Would you like us to save your account? This will erase any other users.\nType yes or no.\n-->"))
+        if enrollDetails == "yes":
+            for i in range(5):
+                try:
+                    email = input("Please enter your Microsoft account email.\n-->")
+                    break
+                except:
+                    print("Sorry! You typed a number, but we need a letter! Try again!")
+                    continue
+            else:
+                print("Sorry! There was an error saving your account details, so we couldn't continue!")
+                print("Exiting in 3 seconds.")
+                startfile("ErrorHandler.txt")
+            for i in range(5):
+                try:
+                    pwd = input("Please input your Microsoft account password.\n-->")
+                    break
+                except:
+                    print("Sorry! You typed a number, but we need a letter! Try again!")
+                    continue
+            else:
+                print("Sorry! There was an error saving your account details, so we couldn't continue!")
+                print("Exiting in 3 seconds.")
+                startfile("ErrorHandler.txt")
+            # Creates encryption keys, I think this could be simplified
+            key = Fernet.generate_key()
+            key2 = Fernet.generate_key()
+            keyEmail = Fernet(key)
+            keyPwd = Fernet(key2)
+            # Encrypts the email and password
+            encEmail = keyEmail.encrypt(email.encode())
+            encPwd = keyPwd.encrypt(pwd.encode())
+            # Dictionary that will be stored in a pickle file...
+            # with the encrypted email and password in it with appropriate dictionary...
+            #  keys to call back the email and password later
+            encEPPickle = {userName + " Email": encEmail, userName + " Password": encPwd}
+            try:
+            # Store the dictionary in a pickle file called encEPwd.pkl
+                with open('encEPwd.pkl', 'wb') as encFile:
+                    pickle.dump(encEPPickle, encFile)
+            except:
+                print("We couldn't save your profile, but we can still continue! Would you like to? Type yes or no.\n-->")
+                goOn = str.lower(input())
+                if goOn == "yes":
+                    pass
+            # Dictionary that will be stored in a pickle file...
+            #  with the decryption keys for the email and password in it with appropriate dictionary...
+            #  keys to call back the decryption keys later
+            encKeyPickle = {userName + " keyEmail": keyEmail, userName + " keyPwd": keyPwd}
+            try:
+                with open('encKey.pkl', 'wb') as encKey:
+                    pickle.dump(encKeyPickle, encKey)
+                print("Profile saved succesesfully!\nJust type your name next time you use the bot, and we'll remember you password.\nAnd of course, it also encrypted.")
+            except:
+                print("We couldn't save your profile, but we can still continue! Would you like to? Type yes or no.\n-->")
+                goOn = str.lower(input())
+                if goOn == "yes":
+                    pass
+            print("Profile saved succesesfully!\nJust type your name next time you use the bot, and we'll remember you password.\nAnd of course, it also encrypted.")
+        else:
+            print("Okay! We won't save your profile!")
+            print("We'll still need your Microsoft account email and password to login though.")
+            for i in range(5):
+                try:
+                    email = input("Please enter your Microsoft account email.\n-->")
+                    break
+                except:
+                    print("Sorry! You typed a number, but we need a letter! Try again!")
+                    continue
+            else:
+                print("Sorry! There was an error while you were inputing your account details.")
+                print("Exiting in 3 seconds.")
+                startfile("ErrorHandler.txt")
+                sys.exit(2.9)
+            for i in range(5):
+                try:
+                    pwd = input("Please input your Microsoft account password.\n-->")
+                    break
+                except:
+                    print("Sorry! You typed a number, but we need a letter! Try again!")
+                    continue
+            else:
+                print("Sorry! There was an error you were inputing your account details.")
+                print("Exiting in 3 seconds.")
+                startfile("ErrorHandler.txt")
+                sys.exit(2.9)
+            
 except:
     print("A fatal error occured!! We need to exit. Try rerunning the program. :(")
     startfile("ErrorHandler.txt")
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
+print("Okay! Starting login, and searches!")
 
 # Defines the funtion that the threads use later on to search...
 # t1 represents which WebDriver that thread uses, the first or the second one...
 # You need to WebDrivers because you can't control more than one tab at a time...
 # I think we should make a for loop that desides how many WebDriver instances you would have...
 # but that would be burdensome to implement
-def searchNumR(n1,n2, t1):
+
+
+"""def searchNumR(n1,n2, t1):
     for i in range(n1):
-        t1.get(f"https://www.bing.com/search?q={randint(1,2000)}")
+        t1.get(f"https://www.bing.com/search?q={random.randint(1,2000)}")
         time.sleep(n2)
-        print("This thread is running fine, and the tab was closed.")
+        print("This thread is running fine, and the tab was closed.")"""
+
+#connors stuff down here:
+beginlist = ['why', 'how', 'what', 'where', 'when']
+list2 = ['did', 'could',]
+list3 = ['the', 'a', 'you', 'they', 'we', 'people']
+list4 = ['apple', 'scam', 'minecraft', 'microsoft', 'email', 'talk', 'random', 'box', 'company', 'fireplace']
+def searchNumR(n1, n2):
+    for i in range(n1):
+        searchterm = f'https://www.bing.com/search?q={random.choice(beginlist)}+{random.choice(list2)}+{random.choice(list3)}+{random.choice(list4)}'
+        try:
+            whatBrowse.get(searchterm)
+            time.sleep(n2)
+        except:
+            time.sleep(n2)
+            if i + 1 == 1:
+                serNum = "1st"
+            else:
+                serNum = f"{i + 1}d"
+            print(f"Hmm, the {serNum} search didn't work. do you have internet? Trying again.")
+            continue
+
 for i in range(5):
     try:
         # Login for the first webdriver instance
@@ -175,14 +261,11 @@ for i in range(5):
         print("Weird, the login didnt work. We'll try again.")
         continue
 else:
-    print("There were some issues getting you logged into your account. We tried several times, but we couldn't get it to work.\nThe program will have to close. :(")
-    startfile("ErrorHandler.txt")
-    print("System will exit in 3 seconds")
-    time.sleep(2.9)
-    sys.exit()
+    print("There were some issues getting you logged into your account. We tried several times, but we couldn't get it to work. :(")
+    print("We'll continue on with the searches, but you won't be signed in.")
 time.sleep(4)
 # For loops to create two instances running at once
-searchNumR(searchNum, timeNum, whatBrowse)
+searchNumR(searchNum, timeNum)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
