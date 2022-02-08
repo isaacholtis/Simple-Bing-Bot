@@ -10,7 +10,6 @@ from cryptography.fernet import Fernet
 import pickle
 import sys
 from os import startfile
-import numpy
 
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
@@ -34,8 +33,8 @@ for i in range(5):
             encFiles = pickle.load(encOpenEmail)
         with open('encKey.pkl', 'rb') as encOpenKey:
             encFilesKey = pickle.load(encOpenKey)
-        wordList = open('wordList.txt', 'rb')
-        list4 = wordList.read()
+        with open('wordList.pkl', 'rb') as wordList:
+            list4 = pickle.load(wordList)
         break
     except FileNotFoundError:
         print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
@@ -278,6 +277,11 @@ searchNumR(searchNum, timeNum)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
-id = whatBrowse.find_element_by_id("id_a")
-id.click()
+try:
+    id = whatBrowse.find_element_by_id("id_a")
+    id.click()
+except:
+    pass
+time.sleep(5)
+whatBrowse.close()
 print("Searches completed succsesfully! Thanks again for using our bot!")
