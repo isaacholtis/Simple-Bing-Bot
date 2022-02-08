@@ -36,8 +36,6 @@ for i in range(5):
             encFilesKey = pickle.load(encOpenKey)
         wordList = open('wordList.txt', 'rb')
         list4 = wordList.read()
-        print(list4)
-        time.sleep(100)
         break
     except FileNotFoundError:
         print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
@@ -237,7 +235,6 @@ print("Okay! Starting login, and searches!")
 beginlist = ['why', 'how', 'what', 'where', 'when']
 list2 = ['did', 'could',]
 list3 = ['the', 'a', 'you', 'they', 'we', 'people']
-list4 = []
 def searchNumR(n1, n2):
     for i in range(n1):
         searchterm = f'https://www.bing.com/search?q={random.choice(beginlist)}+{random.choice(list2)}+{random.choice(list3)}+{random.choice(list4)}'
