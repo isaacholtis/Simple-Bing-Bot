@@ -10,12 +10,15 @@ from cryptography.fernet import Fernet
 import pickle
 import sys
 from os import startfile
+import webbrowser
 
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
 whatBrowse = webdriver.Firefox()
 print("Browser started")
 
+# Rick Roll Error file
+error = 'ErrorHandler.txt'
 # Email web content on the Microsoft account page
 EMAILFIELD = (By.ID, "i0116")
 # Password web content on the Microsoft account page
@@ -45,7 +48,7 @@ for i in range(5):
             break
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -61,7 +64,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
