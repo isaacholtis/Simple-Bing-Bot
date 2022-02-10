@@ -9,7 +9,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from cryptography.fernet import Fernet
 import pickle
 import sys
-from os import startfile
+import os
 import webbrowser
 
 print("Starting browser, give us a moment.")
@@ -79,7 +79,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -95,7 +95,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -124,7 +124,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
             for i in range(5):
                 try:
                     pwd = input("Please input your Microsoft account password.\n-->")
@@ -135,7 +135,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
             # Creates encryption keys, I think this could be simplified
             key = Fernet.generate_key()
             key2 = Fernet.generate_key()
@@ -184,7 +184,7 @@ try:
             else:
                 print("Sorry! There was an error while you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
                 sys.exit(2.9)
             for i in range(5):
                 try:
@@ -196,12 +196,12 @@ try:
             else:
                 print("Sorry! There was an error you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
                 sys.exit(2.9)
             
 except:
     print("A fatal error occured!! We need to exit. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -231,7 +231,7 @@ def searchNumR(n1, n2):
             print(f"Hmm, the {serNum} search didn't work. do you have internet? Trying again.")
             continue
 
-'''for i in range(5):
+for i in range(5):
     try:
         # Login for the first webdriver instance
         whatBrowse.get('https://login.live.com')
@@ -252,7 +252,7 @@ def searchNumR(n1, n2):
         continue
 else:
     print("There were some issues getting you logged into your account. We tried several times, but we couldn't get it to work. :(")
-    print("We'll continue on with the searches, but you won't be signed in.")'''
+    print("We'll continue on with the searches, but you won't be signed in.")
 time.sleep(4)
 # For loops to create two instances running at once
 searchNumR(searchNum, timeNum)
