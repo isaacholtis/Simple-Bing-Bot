@@ -20,6 +20,7 @@ elif browserchoice == 2:
 elif browserchoice == 3:
     whatBrowse = webdriver.Firefox()
 
+# Test
 # Rick Roll Error file
 error = 'ErrorHandler.txt'
 # Email web content on the Microsoft account page
