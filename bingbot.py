@@ -231,7 +231,7 @@ def searchNumR(n1, n2):
             print(f"Hmm, the {serNum} search didn't work. do you have internet? Trying again.")
             continue
 
-for i in range(5):
+'''for i in range(5):
     try:
         # Login for the first webdriver instance
         whatBrowse.get('https://login.live.com')
@@ -252,18 +252,15 @@ for i in range(5):
         continue
 else:
     print("There were some issues getting you logged into your account. We tried several times, but we couldn't get it to work. :(")
-    print("We'll continue on with the searches, but you won't be signed in.")
+    print("We'll continue on with the searches, but you won't be signed in.")'''
 time.sleep(4)
 # For loops to create two instances running at once
 searchNumR(searchNum, timeNum)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
-try:
-    id = whatBrowse.find_element_by_id("id_a")
-    id.click()
-except:
-    pass
+id = whatBrowse.find_element(By.ID, "id_a")
+id.click()
 time.sleep(5)
 whatBrowse.close()
 print("Searches completed succsesfully! Thanks again for using our bot!")
