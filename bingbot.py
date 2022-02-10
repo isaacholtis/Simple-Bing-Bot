@@ -14,10 +14,11 @@ import webbrowser
 
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
+print(sys.platform)
 if sys.platform == "win32" or sys.platform == "win32":
     whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver.exe")
-else:
-    whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver")
+elif sys.platform == "darwin":
+    whatBrowse = webdriver.Firefox()
 print("Browser started")
 
 
