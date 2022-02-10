@@ -14,12 +14,13 @@ import webbrowser
 
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
-if sys.platform == "win32" or sys.platform == "win32":
+if sys.platform == "win32":
+    whatBrowse = webdriver.Firefox()
+elif sys.platform == "linux":
     whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver.exe")
 else:
     whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver")
 print("Browser started")
-
 
 # Rick Roll Error file
 error = 'ErrorHandler.txt'
