@@ -9,13 +9,16 @@ from selenium.webdriver.support.ui import WebDriverWait
 from cryptography.fernet import Fernet
 import pickle
 import sys
-from os import startfile
 import webbrowser
 
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
-whatBrowse = webdriver.Firefox()
+if sys.platform == "win32" or sys.platform == "win32":
+    whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver.exe")
+else:
+    whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver")
 print("Browser started")
+
 
 # Rick Roll Error file
 error = 'ErrorHandler.txt'
