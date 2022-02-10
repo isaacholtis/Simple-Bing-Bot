@@ -80,20 +80,7 @@ else:
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
-for i in range(5):
-    try:
-        tabNum = int(input("Please input how long you'd like to wait between searches.\nToo short of a time may cause the page to fail to load.\nWe reccomend about 5 seconds per search as that produces good results and registers searches.\n-->"))
-    except ValueError:
-        print("You didn't input a number!\n\nTry agian!\n")
-        continue
-    else:
-        break
-else:
-    print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
-    print("System will exit in 3 seconds")
-    time.sleep(2.9)
-    sys.exit()
+
 # Gets the name of the user, so we can check if they have entered their credentials before
 for i in range(5):
     try:
@@ -223,14 +210,6 @@ print("Okay! Starting login, and searches!")
 # I think we should make a for loop that desides how many WebDriver instances you would have...
 # but that would be burdensome to implement
 
-
-"""def searchNumR(n1,n2, t1):
-    for i in range(n1):
-        t1.get(f"https://www.bing.com/search?q={random.randint(1,2000)}")
-        time.sleep(n2)
-        print("This thread is running fine, and the tab was closed.")"""
-
-#connors stuff down here:
 beginlist = ['why', 'how', 'what', 'where', 'when']
 list2 = ['did', 'could',]
 list3 = ['the', 'a', 'you', 'they', 'we', 'people']
