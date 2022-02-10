@@ -18,8 +18,8 @@ if sys.platform == "win32":
     whatBrowse = webdriver.Firefox()
 elif sys.platform == "linux":
     whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver.exe")
-else:
-    whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver")
+elif sys.platform == "darwin":
+    whatBrowse = webdriver.Firefox()
 print("Browser started")
 
 # Rick Roll Error file
