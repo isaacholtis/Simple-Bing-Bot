@@ -9,17 +9,30 @@ from selenium.webdriver.support.ui import WebDriverWait
 from cryptography.fernet import Fernet
 import pickle
 import sys
-import os
+import platform
 import webbrowser
 
+print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
+browserChoice = input("Please tell us which browser you would like to use.\n1. Google Chrome\n2. Microsoft Edge\n3. FireFox.\nPlease input 1, 2 or 3 as your choice.\n-->")
+osName = platform.system()
+# Dict for storing what browser the user wants. 1 = Chrome, 2 = Edge, 3 = Firefox
+browserList = {"1": webdriver.Chrome, "2": webdriver.Edge, "3": webdriver.Firefox}
+if browserChoice == "1":
+    browserName = "ChromeDriver"
+elif browserChoice == "2":
+    browserName = "EdgeDriver"
+else:
+    browserName = "GeckoDriver"
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
-if sys.platform == "win32":
-    whatBrowse = webdriver.Firefox()
-elif sys.platform == "linux":
-    whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver.exe")
-elif sys.platform == "darwin":
-    whatBrowse = webdriver.Firefox()
+if osName == "Windows":
+    whatBrowse = browserList[browserChoice](executable_path=f'C:\Program Files\BingBot\{browserName}\{browserName}.exe')
+elif osName == "Linux":
+    whatBrowse = browserList[browserChoice](browserName)
+elif osName == "Darwin":
+    whatBrowse = browserList[browserChoice](browserName)
+else:
+    print("You are running an unsupported OS.")
 print("Browser started")
 
 # Rick Roll Error file
@@ -32,7 +45,6 @@ PASSWORDFIELD = (By.ID, "i0118")
 NEXTBUTTON = (By.ID, "idSIButton9")
 # Sign in button on the bing search page
 SIGNINBUTTON = (By.ID, "id_a")
-print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 
 for i in range(5):
     try:

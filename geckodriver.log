@@ -4050,3 +4050,39 @@ console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message f
 JavaScript warning: https://fpt.microsoft.com/tags?session_id=23FF40BC4D76678F1D0651FB4CC66697, line 5: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
 JavaScript error: https://fpt.microsoft.com/tags?session_id=23FF40BC4D76678F1D0651FB4CC66697, line 5: NS_ERROR_FAILURE: 
 1644513768634	Marionette	INFO	Stopped listening on port 51542
+1644518003815	geckodriver	INFO	Listening on 127.0.0.1:55181
+1644518006916	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55182" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile1KOo8m"
+1644518007651	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile1KOo8m\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:55182/devtools/browser/5909bad1-6031-4ecd-a021-9f129b9f99c4
+1644518010910	Marionette	INFO	Listening on port 55187
+1644518011096	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644518015640	Marionette	INFO	Stopped listening on port 55187
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1644518886027	geckodriver	INFO	Listening on 127.0.0.1:57776
+1644518889114	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "57777" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile7lHyNB"
+1644518889514	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile7lHyNB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57777/devtools/browser/d6a407bb-2fb8-49aa-a865-cfa06be85de7
+1644518891929	Marionette	INFO	Listening on port 57782
+1644518892367	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644518923828	Marionette	INFO	Stopped listening on port 57782
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+1644519222361	geckodriver	INFO	Listening on 127.0.0.1:62904
+1644519225455	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62905" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofilekNHrsg"
+1644519225846	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofilekNHrsg\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:62905/devtools/browser/0a2ff453-ba6d-47f6-9112-b9e81da1afb0
+1644519228237	Marionette	INFO	Listening on port 62910
+1644519228686	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644519241705	Marionette	INFO	Stopped listening on port 62910
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
