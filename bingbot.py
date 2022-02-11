@@ -9,13 +9,21 @@ from selenium.webdriver.support.ui import WebDriverWait
 from cryptography.fernet import Fernet
 import pickle
 import sys
-from os import startfile
+import os
+import webbrowser
 
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
-whatBrowse = webdriver.Firefox()
+print(sys.platform)
+if sys.platform == "win32" or sys.platform == "win32":
+    whatBrowse = webdriver.Firefox("/Users/josephholt/Desktop/Bing_Bot/Simple-Bing-Bot/GeckoDriver/geckodriver.exe")
+elif sys.platform == "darwin":
+    whatBrowse = webdriver.Firefox()
 print("Browser started")
 
+
+# Rick Roll Error file
+error = 'ErrorHandler.txt'
 # Email web content on the Microsoft account page
 EMAILFIELD = (By.ID, "i0116")
 # Password web content on the Microsoft account page
@@ -33,6 +41,8 @@ for i in range(5):
             encFiles = pickle.load(encOpenEmail)
         with open('encKey.pkl', 'rb') as encOpenKey:
             encFilesKey = pickle.load(encOpenKey)
+        with open('wordList.pkl', 'rb') as wordList:
+            list4 = pickle.load(wordList)
         break
     except FileNotFoundError:
         print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
@@ -41,16 +51,9 @@ for i in range(5):
             continue
         else:
             break
-    except pickle.PickleError:
-        print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
-        tryAgian = input("Would you like us to try again? Type yes or no.\n-->")
-        if str.lower(tryAgian) == "yes":
-            continue
-        else:
-            break
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -66,7 +69,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -81,10 +84,11 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
+
 # Gets the name of the user, so we can check if they have entered their credentials before
 for i in range(5):
     try:
@@ -96,7 +100,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -125,7 +129,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
             for i in range(5):
                 try:
                     pwd = input("Please input your Microsoft account password.\n-->")
@@ -136,7 +140,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
             # Creates encryption keys, I think this could be simplified
             key = Fernet.generate_key()
             key2 = Fernet.generate_key()
@@ -185,7 +189,7 @@ try:
             else:
                 print("Sorry! There was an error while you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
                 sys.exit(2.9)
             for i in range(5):
                 try:
@@ -197,12 +201,12 @@ try:
             else:
                 print("Sorry! There was an error you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                startfile("ErrorHandler.txt")
+                webbrowser.open(error)
                 sys.exit(2.9)
             
 except:
     print("A fatal error occured!! We need to exit. Try rerunning the program. :(")
-    startfile("ErrorHandler.txt")
+    webbrowser.open(error)
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -214,18 +218,9 @@ print("Okay! Starting login, and searches!")
 # I think we should make a for loop that desides how many WebDriver instances you would have...
 # but that would be burdensome to implement
 
-
-"""def searchNumR(n1,n2, t1):
-    for i in range(n1):
-        t1.get(f"https://www.bing.com/search?q={random.randint(1,2000)}")
-        time.sleep(n2)
-        print("This thread is running fine, and the tab was closed.")"""
-
-#connors stuff down here:
 beginlist = ['why', 'how', 'what', 'where', 'when']
 list2 = ['did', 'could',]
 list3 = ['the', 'a', 'you', 'they', 'we', 'people']
-list4 = ['apple', 'scam', 'minecraft', 'microsoft', 'email', 'talk', 'random', 'box', 'company', 'fireplace']
 def searchNumR(n1, n2):
     for i in range(n1):
         searchterm = f'https://www.bing.com/search?q={random.choice(beginlist)}+{random.choice(list2)}+{random.choice(list3)}+{random.choice(list4)}'
@@ -269,6 +264,8 @@ searchNumR(searchNum, timeNum)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
-id = whatBrowse.find_element_by_id("id_a")
+id = whatBrowse.find_element(By.ID, "id_a")
 id.click()
+time.sleep(5)
+whatBrowse.close()
 print("Searches completed succsesfully! Thanks again for using our bot!")
