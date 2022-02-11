@@ -9,12 +9,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from cryptography.fernet import Fernet
 import pickle
 import sys
-import platform
-import webbrowser
+from os import startfile
 
 print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 browserChoice = input("Please tell us which browser you would like to use.\n1. Google Chrome\n2. Microsoft Edge\n3. FireFox.\nPlease input 1, 2 or 3 as your choice.\n-->")
-osName = platform.system()
 # Dict for storing what browser the user wants. 1 = Chrome, 2 = Edge, 3 = Firefox
 browserList = {"1": webdriver.Chrome, "2": webdriver.Edge, "3": webdriver.Firefox}
 if browserChoice == "1":
@@ -25,14 +23,7 @@ else:
     browserName = "GeckoDriver"
 print("Starting browser, give us a moment.")
 # Using firefox, since Microsoft Edge was not letting me sign in
-if osName == "Windows":
-    whatBrowse = browserList[browserChoice](executable_path=f'C:\Program Files\BingBot\{browserName}\{browserName}.exe')
-elif osName == "Linux":
-    whatBrowse = browserList[browserChoice](browserName)
-elif osName == "Darwin":
-    whatBrowse = browserList[browserChoice](browserName)
-else:
-    print("You are running an unsupported OS.")
+whatBrowse = browserList[browserChoice](executable_path=f'C:\Program Files\BingBot\{browserName}\{browserName}.exe')
 print("Browser started")
 
 # Rick Roll Error file
@@ -65,7 +56,7 @@ for i in range(5):
             break
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
-    webbrowser.open(error)
+    startfile('ErrorHandler.txt')
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -81,7 +72,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    webbrowser.open(error)
+    startfile('ErrorHandler.txt')
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -96,7 +87,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    webbrowser.open(error)
+    startfile('ErrorHandler.txt')
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -112,7 +103,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    webbrowser.open(error)
+    startfile('ErrorHandler.txt')
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -141,7 +132,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                startfile('ErrorHandler.txt')
             for i in range(5):
                 try:
                     pwd = input("Please input your Microsoft account password.\n-->")
@@ -152,7 +143,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                startfile('ErrorHandler.txt')
             # Creates encryption keys, I think this could be simplified
             key = Fernet.generate_key()
             key2 = Fernet.generate_key()
@@ -201,7 +192,7 @@ try:
             else:
                 print("Sorry! There was an error while you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                startfile('ErrorHandler.txt')
                 sys.exit(2.9)
             for i in range(5):
                 try:
@@ -213,12 +204,12 @@ try:
             else:
                 print("Sorry! There was an error you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                startfile('ErrorHandler.txt')
                 sys.exit(2.9)
             
 except:
     print("A fatal error occured!! We need to exit. Try rerunning the program. :(")
-    webbrowser.open(error)
+    startfile('ErrorHandler.txt')
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
