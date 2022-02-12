@@ -1,29 +1,44 @@
 #!/bin/python3
-import random
-import time
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.edge.service import Service as EdgeService
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from selenium.webdriver.ie.service import Service as IEService
+from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import GeckoDriverManager
+from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from webdriver_manager.microsoft import IEDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.support.ui import WebDriverWait
 from cryptography.fernet import Fernet
 import pickle
 import sys
 import os
 import webbrowser
+import time
+import random
 
-print("Which browser do you want to use? \n1. Google Chrome\n2. Microsoft Edge\n3. Mozilla Firefox")
-browserchoice = int(input("[1/2/3] --> "))
-if browserchoice == 1:
-    whatBrowse = webdriver.Chrome()
-elif browserchoice == 2:
-    whatBrowse = webdriver.Edge()
-elif browserchoice == 3:
-    whatBrowse = webdriver.Firefox()
+#check what search engine to use
+for i in range(5):
+    print("which browser do you want the bot to use? (the browser needs to be installed) \n1. Google Chrome\n2. Microsoft Edge\n3. Mozilla Firefox")
+    BrowserChoice = str(input("[1/2/3]--> "))
+    if BrowserChoice == "1":
+        service = ChromeService(executable_path=ChromeDriverManager().install())
+        driver = webdriver.Chrome(service=service)
+        break
+    elif BrowserChoice == "2":
+        service = EdgeService(executable_path=EdgeChromiumDriverManager().install())
+        driver = webdriver.Edge(service=service)
+        break
+    elif BrowserChoice == "3":
+        service = FirefoxService(executable_path=GeckoDriverManager().install())
+        driver = webdriver.Firefox(service=service)
+        break
+    else:
+        print("Invalid input! Type 1, 2, or 3")
 
-# Test
-# Rick Roll Error file
-error = 'ErrorHandler.txt'
+
 # Email web content on the Microsoft account page
 EMAILFIELD = (By.ID, "i0116")
 # Password web content on the Microsoft account page
@@ -53,7 +68,7 @@ for i in range(5):
             break
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
-    webbrowser.open(error)
+    print("FATAL: unknown error")
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -69,7 +84,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    webbrowser.open(error)
+    print("FATAL: unknown error")
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -84,7 +99,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    webbrowser.open(error)
+    print("FATAL: unknown error")
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -100,7 +115,7 @@ for i in range(5):
         break
 else:
     print("You did something wrong too many times. Try rerunning the program. :(")
-    webbrowser.open(error)
+    print("FATAL: unknown error")
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -129,7 +144,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                print("FATAL: unknown error")
             for i in range(5):
                 try:
                     pwd = input("Please input your Microsoft account password.\n-->")
@@ -140,7 +155,7 @@ try:
             else:
                 print("Sorry! There was an error saving your account details, so we couldn't continue!")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                print("FATAL: unknown error")
             # Creates encryption keys, I think this could be simplified
             key = Fernet.generate_key()
             key2 = Fernet.generate_key()
@@ -189,7 +204,7 @@ try:
             else:
                 print("Sorry! There was an error while you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                print("FATAL: unknown error")
                 sys.exit(2.9)
             for i in range(5):
                 try:
@@ -201,12 +216,12 @@ try:
             else:
                 print("Sorry! There was an error you were inputing your account details.")
                 print("Exiting in 3 seconds.")
-                webbrowser.open(error)
+                print("FATAL: unknown error")
                 sys.exit(2.9)
             
 except:
     print("A fatal error occured!! We need to exit. Try rerunning the program. :(")
-    webbrowser.open(error)
+    print("FATAL: unknown error")
     print("System will exit in 3 seconds")
     time.sleep(2.9)
     sys.exit()
@@ -218,12 +233,14 @@ print("Okay! Starting login, and searches!")
 # I think we should make a for loop that desides how many WebDriver instances you would have...
 # but that would be burdensome to implement
 
-beginlist = ['why', 'how', 'what', 'where', 'when']
-list2 = ['did', 'could',]
+startlist = ['why', 'how', 'what', 'where', 'when', 'who',]
+auxlist = ['do', 'is', 'did', 'will', 'has', 'does']
+subjectlist = ['study', 'you',]
+
 list3 = ['the', 'a', 'you', 'they', 'we', 'people']
 def searchNumR(n1, n2):
     for i in range(n1):
-        searchterm = f'https://www.bing.com/search?q={random.choice(beginlist)}+{random.choice(list2)}+{random.choice(list3)}+{random.choice(list4)}'
+        searchterm = f'https://www.bing.com/search?q={random.choice(startlist)}+{random.choice(auxlist)}+{random.choice(list3)}+{random.choice(list4)}'
         try:
             whatBrowse.get(searchterm)
             time.sleep(n2)
