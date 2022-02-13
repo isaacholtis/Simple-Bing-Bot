@@ -242,7 +242,7 @@ def searchNumR(n1, n2):
     for i in range(n1):
         searchterm = f'https://www.bing.com/search?q={random.choice(startlist)}+{random.choice(auxlist)}+{random.choice(list3)}+{random.choice(list4)}'
         try:
-            whatBrowse.get(searchterm)
+            driver.get(searchterm)
             time.sleep(n2)
         except:
             time.sleep(n2)
@@ -256,17 +256,17 @@ def searchNumR(n1, n2):
 for i in range(5):
     try:
         # Login for the first webdriver instance
-        whatBrowse.get('https://login.live.com')
+        driver.get('https://login.live.com')
         # Wait for email field and enter email
-        WebDriverWait(whatBrowse, 10).until(EC.element_to_be_clickable(EMAILFIELD)).send_keys(email)
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(EMAILFIELD)).send_keys(email)
         # Click Next
-        WebDriverWait(whatBrowse, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
         # Wait for password field and enter password
-        WebDriverWait(whatBrowse, 10).until(EC.element_to_be_clickable(PASSWORDFIELD)).send_keys(pwd)
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(PASSWORDFIELD)).send_keys(pwd)
         # Click Login
-        WebDriverWait(whatBrowse, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
         # Click Yes
-        WebDriverWait(whatBrowse, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
+        WebDriverWait(driver, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
         time.sleep(1)
         break
     except:
@@ -281,8 +281,8 @@ searchNumR(searchNum, timeNum)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
-id = whatBrowse.find_element(By.ID, "id_a")
+id = driver.find_element(By.ID, "id_a")
 id.click()
 time.sleep(5)
-whatBrowse.close()
+driver.close()
 print("Searches completed succsesfully! Thanks again for using our bot!")
