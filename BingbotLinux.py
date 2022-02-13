@@ -54,10 +54,6 @@ for i in range(5):
         # Loads the pickle files with the user dictionarys 
         with open('encEPwd.pkl', 'rb') as encOpenEmail:
             encFiles = pickle.load(encOpenEmail)
-        with open('encKey.pkl', 'rb') as encOpenKey:
-            encFilesKey = pickle.load(encOpenKey)
-        with open('wordList.pkl', 'rb') as wordList:
-            list4 = pickle.load(wordList)
         break
     except FileNotFoundError:
         print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
@@ -86,7 +82,7 @@ else:
     print("You did something wrong too many times. Try rerunning the program. :(")
     print("FATAL: unknown error")
     print("System will exit in 3 seconds")
-    time.sleep(2.9)
+    time.sleep(3)
     sys.exit()
 # Get a variable to tell the system how long to wait before closing a tab.
 for i in range(5):
@@ -235,12 +231,14 @@ print("Okay! Starting login, and searches!")
 
 startlist = ['why', 'how', 'what', 'where', 'when', 'who',]
 auxlist = ['do', 'is', 'did', 'will', 'has', 'does']
-subjectlist = ['study', 'you',]
+subjectlist = ['you', 'i',]
+verblist = ['study', 'like', 'do']
+infolist = ['dogs', 'microsoft', 'cars', 'food', 'walmart']
 
 list3 = ['the', 'a', 'you', 'they', 'we', 'people']
 def searchNumR(n1, n2):
     for i in range(n1):
-        searchterm = f'https://www.bing.com/search?q={random.choice(startlist)}+{random.choice(auxlist)}+{random.choice(list3)}+{random.choice(list4)}'
+        searchterm = f'https://www.bing.com/search?q={random.choice(startlist)}+{random.choice(auxlist)}+{random.choice(subjectlist)}+{random.choice(verblist)}+{random.choice(infolist)}'
         try:
             driver.get(searchterm)
             time.sleep(n2)
