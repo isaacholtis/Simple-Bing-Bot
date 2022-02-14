@@ -51,7 +51,7 @@ print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 
 for i in range(5):
     try:
-        # Loads the pickle files with the user dictionarys 
+        # Loads the pickle files with the user dictionaries
         with open('encEPwd.pkl', 'rb') as encOpenEmail:
             encFiles = pickle.load(encOpenEmail)
         break
@@ -64,9 +64,9 @@ for i in range(5):
             break
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
-    print("FATAL: unknown error")
+    print("FATAL: .pkl file does not exist")
     print("System will exit in 3 seconds")
-    time.sleep(2.9)
+    time.sleep(3)
     sys.exit()
 # Get a variable to tell the system how many searches each thread completes...
 # This will be double the searches intended by the user, so we need to fix that
@@ -97,7 +97,7 @@ else:
     print("You did something wrong too many times. Try rerunning the program. :(")
     print("FATAL: unknown error")
     print("System will exit in 3 seconds")
-    time.sleep(2.9)
+    time.sleep(3)
     sys.exit()
 
 # Gets the name of the user, so we can check if they have entered their credentials before
@@ -113,7 +113,7 @@ else:
     print("You did something wrong too many times. Try rerunning the program. :(")
     print("FATAL: unknown error")
     print("System will exit in 3 seconds")
-    time.sleep(2.9)
+    time.sleep(3)
     sys.exit()
 
 # If the user has entered credentials, the system won't ask again
@@ -121,10 +121,10 @@ try:
     if userName + " Email" in encFiles:
         print("You exist in our system! Logging you in now!")
         emailCrypt = encFiles[userName + " Email"]
-        emailKey = encFilesKey[userName + " keyEmail"]
+        emailKey = encKey[userName + " keyEmail"]
         email = emailKey.decrypt(emailCrypt).decode()
         pwdCrypt = encFiles[userName + " Password"]
-        pwdKey = encFilesKey[userName + " keyPwd"]
+        pwdKey = encKey[userName + " keyPwd"]
         pwd = pwdKey.decrypt(pwdCrypt).decode()
     # If the user has not entered credentials before, the system will ask the user to enter them
     else:
@@ -201,7 +201,7 @@ try:
                 print("Sorry! There was an error while you were inputing your account details.")
                 print("Exiting in 3 seconds.")
                 print("FATAL: unknown error")
-                sys.exit(2.9)
+                sys.exit(3)
             for i in range(5):
                 try:
                     pwd = input("Please input your Microsoft account password.\n-->")
@@ -213,13 +213,13 @@ try:
                 print("Sorry! There was an error you were inputing your account details.")
                 print("Exiting in 3 seconds.")
                 print("FATAL: unknown error")
-                sys.exit(2.9)
+                sys.exit(3)
             
 except:
     print("A fatal error occured!! We need to exit. Try rerunning the program. :(")
     print("FATAL: unknown error")
     print("System will exit in 3 seconds")
-    time.sleep(2.9)
+    time.sleep(3)
     sys.exit()
 print("Okay! Starting login, and searches!")
 
@@ -229,16 +229,26 @@ print("Okay! Starting login, and searches!")
 # I think we should make a for loop that desides how many WebDriver instances you would have...
 # but that would be burdensome to implement
 
+#dont change these lists, except for adding more verbs to verblist
+#formula for how many possible searches: multiply the len of each list by each other (except searchlist)
 startlist = ['why', 'how', 'what', 'where', 'when', 'who',]
 auxlist = ['do', 'is', 'did', 'will', 'has', 'does']
-subjectlist = ['you', 'i',]
-verblist = ['study', 'like', 'do']
-infolist = ['dogs', 'microsoft', 'cars', 'food', 'walmart']
+subjectlist = ['you', 'i', 'we']
+verblist = ['study', 'like', 'do', 'love', 'change', 'find', 'create', 'build']
 
-list3 = ['the', 'a', 'you', 'they', 'we', 'people']
+#add any nouns you want to infolist; it gives the bot more content to work with
+infolist = ['dogs', 'microsoft', 'cars', 'food', 'walmart', 'grammarly', 'california', 'debate', 'monitor', 'paper', 'marvel', 'dc', 'tesla', 'dream', 'python', 'github', 'ram', 'ford', 'strike', 'amazon', 'aws']
+
+#searchlist is a list of all of the completed searches, used to make sure the bot doesnt repeat the same search over again.
+searchlist = []
+
 def searchNumR(n1, n2):
     for i in range(n1):
-        searchterm = f'https://www.bing.com/search?q={random.choice(startlist)}+{random.choice(auxlist)}+{random.choice(subjectlist)}+{random.choice(verblist)}+{random.choice(infolist)}'
+        while True:
+            searchterm = f'https://www.bing.com/search?q={random.choice(startlist)}+{random.choice(auxlist)}+{random.choice(subjectlist)}+{random.choice(verblist)}+{random.choice(infolist)}'
+            if searchterm not in searchlist:
+                searchlist.append(searchterm)
+                break
         try:
             driver.get(searchterm)
             time.sleep(n2)
@@ -279,8 +289,8 @@ searchNumR(searchNum, timeNum)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
-id = driver.find_element(By.ID, "id_a")
-id.click()
+#id = driver.find_element(By.ID, "id_a")
+#id.click()
 time.sleep(5)
 driver.close()
 print("Searches completed succsesfully! Thanks again for using our bot!")

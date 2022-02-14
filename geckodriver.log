@@ -4086,3 +4086,302 @@ JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_
 
 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
 
+1644711501418	geckodriver	INFO	Listening on 127.0.0.1:44141
+1644711501420	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile9Vc0nA"
+1644711501741	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile9Vc0nA/search.json.mozlz4", (void 0)))
+1644711502867	Marionette	INFO	Listening on port 41335
+1644711502932	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644711621741	Marionette	INFO	Stopped listening on port 41335
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644711713120	geckodriver	INFO	Listening on 127.0.0.1:54585
+1644711713122	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile8lQJun"
+1644711713378	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile8lQJun/search.json.mozlz4", (void 0)))
+1644711714410	Marionette	INFO	Listening on port 44093
+1644711714433	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644712022275	geckodriver	INFO	Listening on 127.0.0.1:42937
+1644712022278	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile2redlh"
+1644712022526	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2redlh/search.json.mozlz4", (void 0)))
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1644712023907	Marionette	INFO	Listening on port 45021
+1644712023992	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644712032275	Marionette	INFO	Stopped listening on port 45021
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1644712694406	geckodriver	INFO	Listening on 127.0.0.1:47579
+1644712694408	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile3T59Xd"
+1644712694660	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile3T59Xd/search.json.mozlz4", (void 0)))
+1644712695751	Marionette	INFO	Listening on port 35175
+1644712695823	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644714389866	geckodriver	INFO	Listening on 127.0.0.1:37859
+1644714389868	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileQoQIy0"
+1644714390117	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileQoQIy0/search.json.mozlz4", (void 0)))
+1644714391442	Marionette	INFO	Listening on port 45585
+1644714391505	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644714480974	Marionette	INFO	Stopped listening on port 45585
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644714490459	geckodriver	INFO	Listening on 127.0.0.1:47883
+1644714490461	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile25GaeA"
+1644714490709	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile25GaeA/search.json.mozlz4", (void 0)))
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1644714491858	Marionette	INFO	Listening on port 43857
+1644714491873	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644714540182	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714543317	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714546840	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714550576	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714554150	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714557772	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714561307	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714565777	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714568489	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644714603083	Marionette	INFO	Stopped listening on port 43857
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644714684849	Marionette	INFO	Stopped listening on port 44093
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+1644714911140	Marionette	INFO	Stopped listening on port 35175
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644796259054	geckodriver	INFO	Listening on 127.0.0.1:33453
+1644796259056	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilesf9AME"
+1644796259373	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilesf9AME/search.json.mozlz4", (void 0)))
+1644796260474	Marionette	INFO	Listening on port 39057
+1644796260571	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644796294903	geckodriver	INFO	Listening on 127.0.0.1:56077
+1644796294905	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile0m4w6l"
+1644796295150	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0m4w6l/search.json.mozlz4", (void 0)))
+1644796296216	Marionette	INFO	Listening on port 40201
+1644796296320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644796299264	Marionette	INFO	Stopped listening on port 39057
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644796320526	Marionette	INFO	Stopped listening on port 40201
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644796367375	geckodriver	INFO	Listening on 127.0.0.1:46743
+1644796367377	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile1EAFAN"
+1644796367638	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile1EAFAN/search.json.mozlz4", (void 0)))
+1644796368759	Marionette	INFO	Listening on port 40047
+1644796368789	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644796412130	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796414463	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796416993	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796419699	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796422309	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796424828	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796427551	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://www.bing.com/search?q=how+do+i+study+cars line 27 > injectedScript, line 2: TypeError: Null element passed to Lib.CssClass
+1644796430099	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796432862	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796435427	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796483186	Marionette	INFO	Stopped listening on port 40047
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+[Parent 4205, IPC I/O Parent] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file ./ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc:19
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644796502672	geckodriver	INFO	Listening on 127.0.0.1:57001
+1644796502674	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileqtM5cA"
+1644796502927	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileqtM5cA/search.json.mozlz4", (void 0)))
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1644796504141	Marionette	INFO	Listening on port 41597
+1644796504195	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644796551349	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796552551	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796554199	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796555817	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796557464	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796559059	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796560712	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796562383	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796563916	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796565473	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796567046	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796568829	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796570431	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796572026	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796573574	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796575191	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796579884	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796581533	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796583160	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796584956	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644796586514	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=bd271772-b61a-4801-94c2-7e48babac480&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22405FBBDE40044338A98235728B049A1E%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=4afe57b1-342c-475a-9dd9-3bbc4464f8c4&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2289B2FF7187024C6B92970B17922AD244%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=5769474d-7951-457d-886e-812ceec77443&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%220557D302826D4781B48FF37A48257652%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=494b6e93-7d60-4e87-94fa-c502e28bb30a&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22F01DF02FC2DA42C08146FEBD72A0F55C%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=5265caa3-ff57-4a95-a9b6-7a28b127050f&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22E5CD317E584E41A2AEFA8C0D2755F95A%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=2a92296d-4bce-4b40-ba04-c06eff5f4bcd&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22A57424EBCEDD4B65BB1EE9BEBBD17583%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=7ad09b96-8880-4e0d-bd7f-67fd05691f4a&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%222B708C89CCF240498399403164CDCE0E%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=06969a0d-07ff-481c-ab75-8720eb2fdc7b&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2276B1985D953647378817148B4B966948%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=fba52647-12cc-4697-989b-908a9918d25e&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%223CFF65EE8E0947E89FEC9F71DF121BEB%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=de8645bb-66a3-4402-adfe-2a427c1461e1&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2298092B1F023E432D8BA8937A4A667A41%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=c89846b7-ec57-46af-8ad7-a3596ff332f8&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22185FF4D63E014BBB85702AC246AA15FD%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=64db441e-046a-4f1b-ba2d-7ca032eac8b8&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2205DFE9F046F34EA68BAD1D6292C0A5B4%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=70051453-df83-4550-b0dc-89fed3fd37ce&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%221292A7F37B6A4AFC9B21054362C54356%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=a8a1fdc9-87b0-4f77-86e6-85bc150147dc&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22D84AE3D05DB94E81B592D514B3301F44%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=0b64ebb8-92f6-4134-aa4f-cb173d0d7e2d&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%227745CD2D5F764FF889FCD8E4FC772C9C%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=7c8aa4ee-c600-4034-85d8-55f0a0c8eab1&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22FCC6095AB42A44AD95E4C47D7A578ADA%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=4046f623-d6c1-483d-a337-838be163ffcd&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22D39BCFA8B179453598703F65532BC309%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=3c8ea7df-99a4-49e7-a8e9-e5b1b42691bd&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2278EAC48FCB864F2499D3DD8D9E6D7B6C%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=31b8b78a-671b-4bad-a590-0b4714241800&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%226D783B0CC16C4770BC69043CCC034481%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=83756690-cad1-4f5b-b3ff-94ffc2472cbe&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2206B3D923D89341E4834B1C169F79334A%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=a1dde2f6-f18a-46cf-9a81-69d3d81eed85&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22811A8AE18D984403BBD64112B54F2A4C%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=8c77cefe-94cf-45a4-9c69-0481c398f0b0&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22E6C8AD9E26BB4E64A5FBEA27EC82B1B8%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=7d08282a-d00f-416f-86b0-adb116ac8658&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%220234ED5156254D50ADDD663193B14C0F%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=14ec9e5c-21f5-454f-9a5f-f0d91ce9144a&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%225AF5D5179F664889A470C560185B7418%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=0ad2922b-f32b-4e64-a1c7-41639c458b1e&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%224E9D5EE144454EB6AEFC007AFCA8613A%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=03b603fc-c21b-4936-b13e-dd3c22f3904b&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%228F4A338225A74E5C86588FACD3FC14A2%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=70b54482-cc85-47df-9a20-7b168fb70cc7&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%222209DEB55C7E4C93B66CDCB885E43AA4%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=ccc38f15-fa6f-4afe-a3a2-5795d34bbc61&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%224C14E718001F43B0941DD1F1D212AEE6%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=3a1fa883-5701-497e-bf7f-948258bc1550&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%221A989466DA01413A880797674507DBA7%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=e6e951b9-edff-4278-b041-66761593d124&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%221DA24DF66D904FD7909FA416275B2997%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=bae1267f-e99d-4c9d-ae79-dad953784864&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22E575DBCA154C426D82E1DE999E910F15%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=ce07b310-b5b7-4da4-84ca-bf66f3e5c58d&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22FCF370F4C2634D11B191C8AF6D7DDBA6%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=b439eb64-5526-4baf-9a90-530041b097e3&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22FB5E92A83A5D4D3DB376C490439A6570%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=61b10a67-9a0d-4081-8026-dcb008f817e4&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%223B4D9E4F2F884B2CA084F9CC49B628C9%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=b3e30b80-8349-467d-af53-e66f450c7902&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22BC73372A4D0649F292DAAF642E1CE678%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=41aa1c5f-ce31-4d12-b5ab-e14185401756&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22B2953954ACC24CC6962B7AA4F027A06E%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=00d17be7-bb62-4fb5-b63b-baeebfa30dad&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2246538B734A1749BDBA23D70AE1BB47A8%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=3d22fae1-2d2c-40c7-bfea-c1599b09a063&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%222AA82C2B506C41AF99DED385A25F0AA1%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=b0a7eadc-7809-4789-9752-8a19663e7e1a&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2292CB793E2A38492C8AEE8099207BC977%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=258a9bf2-0aa1-42b4-9448-b42224717e40&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%220161997AEC2F4B82ACBC9C3BD63A310D%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=d88a8ebd-2860-4a14-81c6-d1787d761f76&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2223B75FFF2F094677BC755D2516CC00D0%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=ea939454-8f1e-4b18-8e21-183cb05c5f33&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2282AEDA9755B34BA4874A2DF750FFF364%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=8b74c139-7553-4d1b-a4df-58a6c012438f&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2298D3F36C5B62449FB1D4D169B5C3F4F0%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=3411f69c-3358-4592-9008-12bdb5f29098&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%229871E82AA99A4A09901639A4FBC42697%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=608b040e-f3b1-40cb-87f7-a3b5a90df4bd&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22C83ACF087E594F43BB903B5429D9AE6B%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=b33d818c-091b-4ba4-9e41-7e079f30ce19&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2282E2BD3FAABC4C9F9C30679B31D08DFA%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=c7ce7605-1416-4af8-a09b-7eb47c8dc906&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22C93D6F9D873E45FD8E7BA52231936E87%22%7d, line 143: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=570b3e9b-5b70-485f-aa68-01675876159f&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%22B608BCE36DF24840AB1CE8B0AFE4078C%22%7d, line 87: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=bacc3e18-8f66-44ab-97b2-e076e35be84c&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2213C990DFF9DB423BA5FEFA7E66F008F9%22%7d, line 87: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=01fd5348-b343-4d5d-b738-29d0e81bed9d&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2278AB952493054BE887814BDF53ED9EC1%22%7d, line 87: SecurityError: The operation is insecure.
+JavaScript error: https://login.microsoftonline.com/common/oauth2/authorize?client_id=9ea1ad79-fdb6-4f9a-8bc3-2b70f96e34c7&response_type=id_token&nonce=fcf9a916-1560-40ea-8080-353e2c949ada&redirect_uri=https%3a%2f%2fwww.bing.com%2forgid%2fidtoken%2fnosignin&scope=openid&response_mode=form_post&msafed=0&prompt=none&state=%7b%22ig%22%3a%2273EDCC4E1F0D4AE2B6CC866760595CE5%22%7d, line 87: SecurityError: The operation is insecure.
+1644796822270	Marionette	INFO	Stopped listening on port 41597
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644796957269	geckodriver	INFO	Listening on 127.0.0.1:34621
+1644796957271	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilelg0WsX"
+1644796957540	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilelg0WsX/search.json.mozlz4", (void 0)))
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+JavaScript error: chrome://browser/content/places/browserPlacesViews.js, line 137: Error: No DOM node set for aPlacesNode.
+node.type: 0. node.parent: [xpconnect wrapped nsINavHistoryResultNode]
+1644796958594	Marionette	INFO	Listening on port 40505
+1644796958688	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644797007597	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644797008847	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644797010391	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644797020192	Marionette	INFO	Stopped listening on port 40505
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644798388161	geckodriver	INFO	Listening on 127.0.0.1:56127
+1644798388163	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofileRsZrcA"
+1644798388427	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileRsZrcA/search.json.mozlz4", (void 0)))
+1644798389507	Marionette	INFO	Listening on port 36393
+1644798389578	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644798407682	geckodriver	INFO	Listening on 127.0.0.1:48687
+1644798407684	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofile5dGQ63"
+1644798407930	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile5dGQ63/search.json.mozlz4", (void 0)))
+1644798409077	Marionette	INFO	Listening on port 37527
+1644798409097	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644798410088	Marionette	INFO	Stopped listening on port 36393
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644798468408	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798470695	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798473222	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798475808	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798478429	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798482715	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798483595	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798486073	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798488607	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798491246	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1644798501988	Marionette	INFO	Stopped listening on port 37527
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1644798515365	geckodriver	INFO	Listening on 127.0.0.1:43105
+1644798515367	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "-no-remote" "-profile" "/tmp/rust_mozprofilegk3dsI"
+1644798515632	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilegk3dsI/search.json.mozlz4", (void 0)))
+1644798516716	Marionette	INFO	Listening on port 33455
+1644798516778	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1644798557131	Marionette	INFO	Stopped listening on port 33455
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
