@@ -4086,3 +4086,217 @@ JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_
 
 ###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
 
+1645115663380	geckodriver	INFO	Listening on 127.0.0.1:52010
+1645115666441	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52011" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile77FAzc"
+1645115666794	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile77FAzc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52011/devtools/browser/f8a063ba-39c0-456a-8942-9da2a8c3a7a3
+1645115669104	Marionette	INFO	Listening on port 52019
+1645115669604	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645115737061	Marionette	INFO	Stopped listening on port 52019
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645115845857	geckodriver	INFO	Listening on 127.0.0.1:64460
+1645115848939	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64461" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileaf2rKB"
+1645115849318	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileaf2rKB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64461/devtools/browser/e69ac412-2f94-4ef8-9948-823fdb0f7f97
+1645115851771	Marionette	INFO	Listening on port 64469
+1645115852136	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645115870079	Marionette	INFO	Stopped listening on port 64469
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1645116106507	geckodriver	INFO	Listening on 127.0.0.1:59035
+1645116109577	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "59036" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileDDvnNU"
+1645116109945	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileDDvnNU\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59036/devtools/browser/f9fd5ba4-73d9-4333-bdf0-a17d047858a4
+1645116112303	Marionette	INFO	Listening on port 59041
+1645116112742	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645116153429	Marionette	INFO	Stopped listening on port 59041
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1645116528827	geckodriver	INFO	Listening on 127.0.0.1:51516
+1645116531873	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51517" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofilexjbfxH"
+1645116532226	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofilexjbfxH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51517/devtools/browser/848c9726-feb0-4669-9a22-148d52d49ed1
+1645116534744	Marionette	INFO	Listening on port 51523
+1645116535054	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645116575999	Marionette	INFO	Stopped listening on port 51521645116578568	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51584" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileIPTdvW"
+1645116578919	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileIPTdvW\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51584/devtools/browser/0be59f79-cf8c-42ee-9cdb-ef7eb7c312b0
+1645116581366	Marionette	INFO	Listening on port 51594
+1645116581773	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645116673619	Marionette	INFO	Stopped listening on port 51594
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645116727128	geckodriver	INFO	Listening on 127.0.0.1:51668
+1645116730217	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51669" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile31MhtS"
+1645116730553	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile31MhtS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51669/devtools/browser/ef90919c-48bc-4c9c-b6d0-4779d16d6e1a
+1645116732797	Marionette	INFO	Listening on port 51674
+1645116732899	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1645116757859	Marionette	INFO	Stopped listening on port 51674
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645116780870	geckodriver	INFO	Listening on 127.0.0.1:51746
+1645116783928	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51747" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileAhpF5T"
+1645116784297	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileAhpF5T\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51747/devtools/browser/e2c47324-3ba2-4858-afda-28b262802daf
+1645116786672	Marionette	INFO	Listening on port 51752
+1645116787123	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645116819059	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645116821926	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645116825485	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645116837156	Marionette	INFO	Stopped listening on port 51752
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645116864055	geckodriver	INFO	Listening on 127.0.0.1:51869
+1645116867124	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51870" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile2Gwpfj"
+1645116867533	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofile2Gwpfj\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:51870/devtools/browser/d965dab6-cdc9-474f-b703-b460617d753d
+1645116869898	Marionette	INFO	Listening on port 51875
+1645116870327	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645116933539	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645116936555	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645116940275	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645116942845	Marionette	INFO	Stopped listening on port 51875
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+
+1645117383211	geckodriver	INFO	Listening on 127.0.0.1:52336
+1645117386277	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "52337" "-no-remote" "-profile" "C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileMRqljX"
+1645117386727	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\holti\\AppData\\Local\\Temp\\rust_mozprofileMRqljX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52337/devtools/browser/f273328e-c71e-41ff-98b6-a5d7060ab28e
+1645117389260	Marionette	INFO	Listening on port 52342
+1645117389467	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645117409302	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.live.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645117412629	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://login.microsoftonline.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1645117416196	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+1645117426001	Marionette	INFO	Stopped listening on port 52342
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

@@ -44,8 +44,6 @@ for i in range(5):
             encFiles = pickle.load(encOpenEmail)
         with open('encKey.pkl', 'rb') as encOpenKey:
             encFilesKey = pickle.load(encOpenKey)
-        with open('wordList.pkl', 'rb') as wordList:
-            list4 = pickle.load(wordList)
         break
     except FileNotFoundError:
         print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")

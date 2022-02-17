@@ -38,7 +38,6 @@ for i in range(5):
     else:
         print("Invalid input! Type 1, 2, or 3")
 
-
 # Email web content on the Microsoft account page
 EMAILFIELD = (By.ID, "i0116")
 # Password web content on the Microsoft account page
@@ -50,24 +49,20 @@ SIGNINBUTTON = (By.ID, "id_a")
 print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 
 for i in range(5):
-    try:
-        # Loads the pickle files with the user dictionaries
+        # Loads the pickle files with the user dictionarys 
         with open('encEPwd.pkl', 'rb') as encOpenEmail:
             encFiles = pickle.load(encOpenEmail)
+        with open('encKey.pkl', 'rb') as encOpenKey:
+            encFilesKey = pickle.load(encOpenKey)
         break
-    except FileNotFoundError:
-        print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
-        tryAgian = input("Would you like us to try again? Type yes or no.\n-->")
-        if str.lower(tryAgian) == "yes":
-            continue
-        else:
-            break
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
     print("FATAL: .pkl file does not exist")
     print("System will exit in 3 seconds")
     time.sleep(3)
-    sys.exit()
+    encFiles = {}
+    encFilesKey = {}
+    pass
 # Get a variable to tell the system how many searches each thread completes...
 # This will be double the searches intended by the user, so we need to fix that
 for i in range(5):
@@ -115,16 +110,15 @@ else:
     print("System will exit in 3 seconds")
     time.sleep(3)
     sys.exit()
-
 # If the user has entered credentials, the system won't ask again
 try:
     if userName + " Email" in encFiles:
         print("You exist in our system! Logging you in now!")
         emailCrypt = encFiles[userName + " Email"]
-        emailKey = encKey[userName + " keyEmail"]
+        emailKey = encFilesKey[userName + " keyEmail"]
         email = emailKey.decrypt(emailCrypt).decode()
         pwdCrypt = encFiles[userName + " Password"]
-        pwdKey = encKey[userName + " keyPwd"]
+        pwdKey = encFilesKey[userName + " keyPwd"]
         pwd = pwdKey.decrypt(pwdCrypt).decode()
     # If the user has not entered credentials before, the system will ask the user to enter them
     else:
@@ -229,7 +223,7 @@ print("Okay! Starting login, and searches!")
 # I think we should make a for loop that desides how many WebDriver instances you would have...
 # but that would be burdensome to implement
 
-#dont change these lists, except for adding more verbs to verblist
+#don't change these lists, except for adding more verbs to verblist
 #formula for how many possible searches: multiply the len of each list by each other (except searchlist)
 startlist = ['why', 'how', 'what', 'where', 'when', 'who',]
 auxlist = ['do', 'is', 'did', 'will', 'has', 'does']
