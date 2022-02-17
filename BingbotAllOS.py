@@ -49,20 +49,23 @@ SIGNINBUTTON = (By.ID, "id_a")
 print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 
 for i in range(5):
+    try:
         # Loads the pickle files with the user dictionarys 
         with open('encEPwd.pkl', 'rb') as encOpenEmail:
             encFiles = pickle.load(encOpenEmail)
         with open('encKey.pkl', 'rb') as encOpenKey:
             encFilesKey = pickle.load(encOpenKey)
         break
+    except:
+        encFiles = {}
+        encFilesKey = {}
+        break
 else:
     print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
     print("FATAL: .pkl file does not exist")
     print("System will exit in 3 seconds")
     time.sleep(3)
-    encFiles = {}
-    encFilesKey = {}
-    pass
+    sys.exit()
 # Get a variable to tell the system how many searches each thread completes...
 # This will be double the searches intended by the user, so we need to fix that
 for i in range(5):
