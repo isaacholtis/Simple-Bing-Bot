@@ -1,4 +1,3 @@
-#!/bin/python3
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.edge.service import Service as EdgeService
@@ -21,22 +20,25 @@ import random
 
 #check what search engine to use
 for i in range(5):
-    print("which browser do you want the bot to use? (the browser needs to be installed) \n1. Google Chrome\n2. Microsoft Edge\n3. Mozilla Firefox")
-    BrowserChoice = str(input("[1/2/3]--> "))
-    if BrowserChoice == "1":
-        service = ChromeService(executable_path=ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service)
-        break
-    elif BrowserChoice == "2":
-        service = EdgeService(executable_path=EdgeChromiumDriverManager().install())
-        driver = webdriver.Edge(service=service)
-        break
-    elif BrowserChoice == "3":
-        service = FirefoxService(executable_path=GeckoDriverManager().install())
-        driver = webdriver.Firefox(service=service)
-        break
-    else:
-        print("Invalid input! Type 1, 2, or 3")
+    try:
+        print("which browser do you want the bot to use? (the browser needs to be installed) \n1. Google Chrome\n2. Microsoft Edge\n3. Mozilla Firefox")
+        BrowserChoice = str(input("[1/2/3]--> "))
+        if BrowserChoice == "1":
+            service = ChromeService(executable_path=ChromeDriverManager().install())
+            driver = webdriver.Chrome(service=service)
+            break
+        elif BrowserChoice == "2":
+            service = EdgeService(executable_path=EdgeChromiumDriverManager().install())
+            driver = webdriver.Edge(service=service)
+            break
+        elif BrowserChoice == "3":
+            service = FirefoxService(executable_path=GeckoDriverManager().install())
+            driver = webdriver.Firefox(service=service)
+            break
+        else:
+            print("Invalid input! Type 1, 2, or 3")
+    except ConnectionError:
+        print
 
 
 # Email web content on the Microsoft account page

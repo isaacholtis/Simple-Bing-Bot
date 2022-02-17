@@ -267,8 +267,11 @@ searchNumR(searchNum, timeNum)
 # Click the sign in button after the bing searches are complete...
 # Since they don't always sign in after the earlier bit of code
 time.sleep(4)
-id = whatBrowse.find_element(By.ID, "id_a")
-id.click()
+try:
+    id = whatBrowse.find_element(By.ID, "id_a")
+    id.click()
+except:
+    pass
 time.sleep(5)
 whatBrowse.close()
 print("Searches completed succsesfully! Thanks again for using our bot!")
