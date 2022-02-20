@@ -18,7 +18,13 @@ import os
 import webbrowser
 import time
 import random
-
+import json
+"""info = {'email': 'conner@darlingappraising.com', 'passkey': '3Dreams@real'}
+with open('info.json', 'w') as file:
+    json.dump(info, file)
+with open('info.json', 'r') as file:
+    printer = json.load(file)
+    print(printer['email'])"""
 #check what search engine to use
 for i in range(5):
     print("which browser do you want the bot to use? (the browser needs to be installed) \n1. Google Chrome\n2. Microsoft Edge\n3. Mozilla Firefox")
@@ -48,9 +54,9 @@ NEXTBUTTON = (By.ID, "idSIButton9")
 SIGNINBUTTON = (By.ID, "id_a")
 print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 
-for i in range(5):
+"""for i in range(5):
     try:
-        # Loads the pickle files with the user dictionarys 
+        # Loads the pickle files with the user dictionarys
         with open('encEPwd.pkl', 'rb') as encOpenEmail:
             encFiles = pickle.load(encOpenEmail)
         with open('encKey.pkl', 'rb') as encOpenKey:
@@ -67,7 +73,7 @@ else:
     time.sleep(3)
     sys.exit()
 # Get a variable to tell the system how many searches each thread completes...
-# This will be double the searches intended by the user, so we need to fix that
+# This will be double the searches intended by the user, so we need to fix that"""
 for i in range(5):
     try:
         searchNum = int(input("Please input the number of searches you want completed.\nEach search will open a tab once, and then close that tab, so feel free to do as many as you want!\n-->"))
@@ -98,7 +104,17 @@ else:
     time.sleep(3)
     sys.exit()
 
-# Gets the name of the user, so we can check if they have entered their credentials before
+username = input("What is your username? enter in any username you want if this is your first time with the bot or you want to create new credentials for the microsoft account to use\n--> ")
+with open('info.json', 'r') as checkfile:
+    checkfile2 = json.load(checkfile)
+    if username == checkfile2[username]:
+        reguser = "True"
+
+if reguser == "True":
+    with open('info.json', 'r') as infofile:
+        infofile2 = json.load(infofile)
+        email = infofile[email]
+"""# Gets the name of the user, so we can check if they have entered their credentials before
 for i in range(5):
     try:
         userName = input("We need your Microsoft account details so we can sign you in to save your search points.\nPlease input your first and last name so we can store you encrypted username and password.\nOr, if you don't want to save your details, there will be an option to opt out, and you can just enter them, but they won't be saved.\nIf you've already entered your email and password once, then put in your name, and we'll load your profile if it exists in our system.\n-->")
@@ -117,12 +133,7 @@ else:
 try:
     if userName + " Email" in encFiles:
         print("You exist in our system! Logging you in now!")
-        emailCrypt = encFiles[userName + " Email"]
-        emailKey = encFilesKey[userName + " keyEmail"]
-        email = emailKey.decrypt(emailCrypt).decode()
-        pwdCrypt = encFiles[userName + " Password"]
-        pwdKey = encFilesKey[userName + " keyPwd"]
-        pwd = pwdKey.decrypt(pwdCrypt).decode()
+
     # If the user has not entered credentials before, the system will ask the user to enter them
     else:
         enrollDetails = str.lower(input("Would you like us to save your account? This will erase any other users.\nType yes or no.\n-->"))
@@ -217,7 +228,7 @@ except:
     print("FATAL: unknown error")
     print("System will exit in 3 seconds")
     time.sleep(3)
-    sys.exit()
+    sys.exit()"""
 print("Okay! Starting login, and searches!")
 
 # Defines the funtion that the threads use later on to search...
