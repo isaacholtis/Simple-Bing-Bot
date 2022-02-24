@@ -86,20 +86,22 @@ print("\n\n\nWelcome to Bing Bot! We need to do some setup, and then we'll be re
 
 for i in range(5):
     try:
-        # Loads the pickle files with the user dictionaries
+        # Loads the pickle files with the user dictionarys 
         with open('encEPwd.pkl', 'rb') as encOpenEmail:
             encFiles = pickle.load(encOpenEmail)
+        with open('encKey.pkl', 'rb') as encOpenKey:
+            encFilesKey = pickle.load(encOpenKey)
+        with open('wordList.pkl', 'rb') as wordList:
+            infolist = pickle.load(wordList)
         break
-    except FileNotFoundError:
-        print("We couldn't load the user data base file. If you have entered your credentials before, we can try to load the database agian.\nIf you are a new user, you can skip this step, and continue the process.")
-        tryAgian = input("Would you like us to try again? Type yes or no.\n-->")
-        if str.lower(tryAgian) == "yes":
-            continue
-        else:
-            break
+    except:
+        encFiles = {}
+        encFilesKey = {}
+        infolist = ['dogs', 'microsoft', 'cars', 'food', 'walmart', 'grammarly', 'california', 'debate', 'monitor', 'paper', 'marvel', 'dc', 'tesla', 'dream', 'python', 'github', 'ram', 'ford', 'strike', 'amazon', 'aws']
+        print("User info couldn't be loaded, but we are continuing anyway, with new database files.")
+        break
 else:
-    print("Looks like we've hit an error loading the user data base files that we can't resolve. We'll have to close the program. :(")
-    print("FATAL: .pkl file does not exist")
+    print(f"FATAL: Uknown error")
     print("System will exit in 3 seconds")
     time.sleep(3)
     sys.exit()
@@ -157,10 +159,10 @@ try:
     if userName + " Email" in encFiles:
         print("You exist in our system! Logging you in now!")
         emailCrypt = encFiles[userName + " Email"]
-        emailKey = encKey[userName + " keyEmail"]
+        emailKey = encFilesKey[userName + " keyEmail"]
         email = emailKey.decrypt(emailCrypt).decode()
         pwdCrypt = encFiles[userName + " Password"]
-        pwdKey = encKey[userName + " keyPwd"]
+        pwdKey = encFilesKey[userName + " keyPwd"]
         pwd = pwdKey.decrypt(pwdCrypt).decode()
     # If the user has not entered credentials before, the system will ask the user to enter them
     else:
@@ -257,13 +259,6 @@ except:
     print("System will exit in 3 seconds")
     time.sleep(3)
     sys.exit()
-print("Okay! Starting login, and searches!")
-
-# Defines the funtion that the threads use later on to search...
-# t1 represents which WebDriver that thread uses, the first or the second one...
-# You need to WebDrivers because you can't control more than one tab at a time...
-# I think we should make a for loop that desides how many WebDriver instances you would have...
-# but that would be burdensome to implement
 
 #dont change these lists, except for adding more verbs to verblist
 #formula for how many possible searches: multiply the len of each list by each other (except searchlist)
@@ -272,8 +267,9 @@ auxlist = ['do', 'is', 'did', 'will', 'has', 'does']
 subjectlist = ['you', 'i', 'we']
 verblist = ['study', 'like', 'do', 'love', 'change', 'find', 'create', 'build']
 
-#add any nouns you want to infolist; it gives the bot more content to work with
-infolist = ['dogs', 'microsoft', 'cars', 'food', 'walmart', 'grammarly', 'california', 'debate', 'monitor', 'paper', 'marvel', 'dc', 'tesla', 'dream', 'python', 'github', 'ram', 'ford', 'strike', 'amazon', 'aws']
+# Obselete code, using wordlist.pkl now, which contains thousands of lines of words.
+'''#add any nouns you want to infolist; it gives the bot more content to work with
+infolist = ['dogs', 'microsoft', 'cars', 'food', 'walmart', 'grammarly', 'california', 'debate', 'monitor', 'paper', 'marvel', 'dc', 'tesla', 'dream', 'python', 'github', 'ram', 'ford', 'strike', 'amazon', 'aws']'''
 
 #searchlist is a list of all of the completed searches, used to make sure the bot doesnt repeat the same search over again.
 searchlist = []
@@ -332,6 +328,5 @@ searchNumR(searchNum, timeNum)
 time.sleep(4)
 #id = driver.find_element(By.ID, "id_a")
 #id.click()
-time.sleep(5)
 driver.close()
-print("Searches completed succsesfully! Thanks again for using our bot!")
+print("\nSearches completed succsesfully! Thanks again for using our bot!")

@@ -26,8 +26,6 @@ print("Starting browser, give us a moment.")
 whatBrowse = browserList[browserChoice](executable_path=f'C:\Program Files\BingBot\{browserName}\{browserName}.exe')
 print("Browser started")
 
-# Rick Roll Error file
-error = 'ErrorHandler.txt'
 # Email web content on the Microsoft account page
 EMAILFIELD = (By.ID, "i0116")
 # Password web content on the Microsoft account page
