@@ -15,22 +15,21 @@ from cryptography.fernet import Fernet
 import pickle
 import sys
 import os
-import webbrowser
+import threading
 import time
 import random
-import progressbar
+import itertools
 
 # Make a cool loading animation
-  
-# Function to create 
-def animated_marker(n1, string):
-      
-    widgets = [string, progressbar.AnimatedMarker()]
-    bar = progressbar.ProgressBar(widgets=widgets).start()
-      
-    for i in range(n1):
+# Function to create the animation
+def animated_marker():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rLoading ' + c)
+        sys.stdout.flush()
         time.sleep(0.1)
-        bar.update(i)
+    sys.stdout.write('\rDone loading!     ')
 
 #check what search engine to use
 for i in range(5):
@@ -38,19 +37,28 @@ for i in range(5):
         print("which browser do you want the bot to use? (the browser needs to be installed) \n1. Google Chrome\n2. Microsoft Edge\n3. Mozilla Firefox")
         BrowserChoice = int(input("[1/2/3]--> "))
         if BrowserChoice == 1:
+            done = False
+            t1 = threading.Thread(target = animated_marker)
+            t1.start()
             service = ChromeService(executable_path=ChromeDriverManager().install())
             driver = webdriver.Chrome(service=service)
-            animated_marker(100, "Starting Browser ")
+            done = True
             break
         elif BrowserChoice == 2:
+            done = False
+            t1 = threading.Thread(target = animated_marker)
+            t1.start()
             service = EdgeService(executable_path=EdgeChromiumDriverManager().install())
             driver = webdriver.Edge(service=service)
-            animated_marker(100, "Starting Browser ")
+            done = True
             break
         elif BrowserChoice == 3:
+            done = False
+            t1 = threading.Thread(target = animated_marker)
+            t1.start()
             service = FirefoxService(executable_path=GeckoDriverManager().install())
             driver = webdriver.Firefox(service=service)
-            animated_marker(100, "Starting Browser ")
+            done = True
             break
     except ValueError:
         error = "User typed a string, needed an int."
@@ -61,6 +69,9 @@ for i in range(5):
         continue
 else:
     print("Fatal: " + error)
+    print("System will exit in 3 seconds.")
+    time.sleep(2.9)
+    sys.exit()
 
 
 # Email web content on the Microsoft account page
@@ -71,7 +82,7 @@ PASSWORDFIELD = (By.ID, "i0118")
 NEXTBUTTON = (By.ID, "idSIButton9")
 # Sign in button on the bing search page
 SIGNINBUTTON = (By.ID, "id_a")
-print("Welcome to Bing Bot! We need to do some setup, and then we'll be ready.")
+print("\n\n\nWelcome to Bing Bot! We need to do some setup, and then we'll be ready.")
 
 for i in range(5):
     try:
@@ -94,9 +105,10 @@ else:
     sys.exit()
 # Get a variable to tell the system how many searches each thread completes...
 # This will be double the searches intended by the user, so we need to fix that
+time.sleep(0.5)
 for i in range(5):
     try:
-        searchNum = int(input("Please input the number of searches you want completed.\nEach search will open a tab once, and then close that tab, so feel free to do as many as you want!\n-->"))
+        searchNum = int(input("\nPlease input the number of searches you want completed.\nEach search will open a tab once, and then close that tab, so feel free to do as many as you want!\n-->"))
     except ValueError:
         print("You didn't input a number!\n\nTry again!\n")
         continue
@@ -288,7 +300,9 @@ def searchNumR(n1, n2):
 for i in range(5):
     try:
         # Loading animation
-        animated_marker(150, "Signing you in ")
+        done = False
+        t1 = threading.Thread(target = animated_marker)
+        t1.start()
         # Login for the first webdriver instance
         driver.get('https://login.live.com')
         # Wait for email field and enter email
@@ -302,6 +316,7 @@ for i in range(5):
         # Click Yes
         WebDriverWait(driver, 10).until(EC.element_to_be_clickable(NEXTBUTTON)).click()
         time.sleep(1)
+        done = True
         break
     except:
         print("Weird, the login didnt work. We'll try again.")
